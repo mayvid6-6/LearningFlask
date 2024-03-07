@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>I ate a {{form["noun"]}}. <br>
+        It tasted {{form["adjective"]}}.<br>
+        The sky looks {{form["color"]}} today.<br>
+        I was standing in the {{form["place"]}}. <br>
+        <br>
+        {% if form["animal"] == 'cat' %}
+            <img src="static/images/kitty.png" alt="Cat">
+        {% else %}
+            <img src="static/images/doge.png" alt="Dog">
+        {% endif %}
+</body>
+</html>
