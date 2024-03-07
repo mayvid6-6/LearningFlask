@@ -21,7 +21,7 @@ def handle_form():
         f = {}
         f["noun"] = request.form.get('noun')
         f["adjective"] = request.form.get('adjective')
-        f["color"] = request.form.get('color')
+        f["color"] = str(request.form.get('color'))
         f["place"] = request.form.get('place')
         f["animal"] = str(request.form.getlist('animal')[0])
         return render_template('submitted.html', form=f)

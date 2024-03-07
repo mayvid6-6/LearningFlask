@@ -1,0 +1,19 @@
+div,form {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 3%;
+    border-radius: 45px;
+}
+
+h1, p {
+    text-align: center;
+}
+img {
+    margin: auto;
+}
+
+html {
+    background-color: azure;
+}

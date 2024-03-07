@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-    <p>I ate a {{form["noun"]}}. <br>
+
+    <div>
+        <h1>Results</h1>
+        <p>I ate a {{form["noun"]}}. <br>
         It tasted {{form["adjective"]}}.<br>
-        The sky looks {{form["color"]}} today.<br>
         I was standing in the {{form["place"]}}. <br>
+        My favorite color between blue and red is {{form["color"]}}.
+        <br>
         <br>
         {% if form["animal"] == 'cat' %}
             <img src="static/images/kitty.png" alt="Cat">
         {% else %}
             <img src="static/images/doge.png" alt="Dog">
         {% endif %}
+        </p>
+    </div>
 </body>
 </html>

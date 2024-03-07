@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
+
     <form action="thank_you" method="POST">
+        <h1>Quiz</h1>
         <label for="noun">Noun: </label><input id="noun" name="noun" type="text"><br>
         <label for="adjective">Adjective: </label><input id="adjective" name="adjective" type="text"><br>
         <label for="place">Place: </label><input id="place" name="place" type="text"><br>
-
+        <hr>
         <p>What animal image would you like?</p>
 
         <input type="radio" id="dog" name="animal" value="dog">
-        <label for="dog">Cat</label><br>
+        <label for="dog">Dog</label><br>
         <input type="radio" id="cat" name="animal" value="cat">
-        <label for="cat">Dog</label><br>  
+        <label for="cat">Cat</label><br>  
 
-        <label for="color">Choose a background color:</label>
+        <label for="color">What color do you like more:</label>
         <select name="color" id="color">
-          <option value="blue">Volvo</option>
-          <option value="red">Saab</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
         </select>
+        <br>
 
         <input type="submit">
       </form>
